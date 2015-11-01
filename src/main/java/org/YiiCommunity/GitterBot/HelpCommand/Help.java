@@ -41,7 +41,8 @@ public class Help extends Command {
                     "* По команде ping я отвечу pong\n" +
                     "* Если спросишь \"Кто на свете всех милее?\" то я покажу самого закармованного юзера\n" +
                     "\n" +
-                    "Я написан @Alex-Bond и @lavrentiev" +
+                    "Я написан @Alex-Bond и @lavrentiev\n" +
+                    "Отдельное спасибо @amatkivskiy" +
                     "");
         } catch (Exception e) {
             e.printStackTrace();
