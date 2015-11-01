@@ -1,5 +1,14 @@
 commands:
     - help
-    - помощь
-    - "что ты умеешь?"
-    - что ты умеешь
+    - what you can do
+text: "Hi, @{username}!\n
+My name is *WALL-E*. I'm automatic answering system.\n
+Here what i can do:\n
+* It you mention user and just add \"thanks\" to message, i will add +1 in users carma\n
+* If you send message \"carma\" i will sent you information about your carma.\n
+* If you send message \"carma @username\" i will sent you information about users carms.\n
+* I'm answering pong on every ping message\n
+* If you ask \"who is the best\" i will show you most carmed user\n
+
+I written by @Alex-Bond and @lavrentiev\n
+Special thanks to @amatkivskiy"

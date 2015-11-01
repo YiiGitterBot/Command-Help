@@ -32,18 +32,7 @@ public class Help extends Command {
 
     private void showHelp(String username) {
         try {
-            Gitter.sendMessage("" +
-                    "Привет, @" + username + "!\n" +
-                    "Меня зовут *ВАЛЛИ*. Я - автоматическая система поддакивания.\n" +
-                    "Вот что я умею:\n" +
-                    "* Если ты упомянешь пользователя и напишешь \"спасибо\", то ему в карму прилетит бонус\n" +
-                    "* Если ты напишешь \"карма\" или \"карма @ник\" то я покажу тебе твою карму или указаного пользователя\n" +
-                    "* По команде ping я отвечу pong\n" +
-                    "* Если спросишь \"Кто на свете всех милее?\" то я покажу самого закармованного юзера\n" +
-                    "\n" +
-                    "Я написан @Alex-Bond и @lavrentiev\n" +
-                    "Отдельное спасибо @amatkivskiy" +
-                    "");
+            Gitter.sendMessage(getConfig().getString("text").replace("{username}", username));
         } catch (Exception e) {
             e.printStackTrace();
         }
